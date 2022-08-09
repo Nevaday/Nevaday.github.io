@@ -122,7 +122,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">1</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">2</span></a>
 
   </li>
         <li class="menu-item menu-item-schedule">
@@ -154,6 +154,87 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://nevaday.github.io/2022/08/09/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Kmomtplz">
+      <meta itemprop="description" content="随便写写">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nevaday的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/08/09/%E8%AE%B0%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-08-09 23:47:37 / 修改时间：23:49:38" itemprop="dateCreated datePublished" datetime="2022-08-09T23:47:37+08:00">2022-08-09</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="记第一次搭建博客网站"><a href="#记第一次搭建博客网站" class="headerlink" title="记第一次搭建博客网站"></a>记第一次搭建博客网站</h1><p>今天忽然想要搭建一个自己的博客网站，其实也不算是突发奇想，早在之前就有过搭建的想法，只不过本着偷懒的本能一直没有付之行动，今天趁着三分钟的热度把它搭建了出来。</p>
+<p>按照知乎答主<a target="_blank" rel="noopener" href="https://www.zhihu.com/column/c_1201860091307458560">枫叶</a>的博客搭建教程成功把小站搭建出来了，十分感谢答主的分享，让我这个对互联网一窍不通的小白也有自己的博客网站。</p>
+<p>对今天的搭建过程做个小小的总结吧。</p>
+<ul>
+<li><p>首先是搞定Github账号，虽然我之前注册过Github账号，但是早就忘记了密码，但是好在不是大问题，直接找回密码，万事开头难，第一步搞定。</p>
+</li>
+<li><p>安装Git，这一步也很简单，直接点next安装就可以，虽然安装的最新版本的Git与教程中的安装选项有些出入，但是问题不大。</p>
+</li>
+<li><p>将Git与Github绑定，利用SSH公钥登录，不用每次都输入密码；Git中的复制粘贴居然不是ctrl c 和ctrl v震撼到我。但是我在实际操作过程中并没有遇到一些教程上的内容，所以老是感觉那里不太对劲，但是居然成功绑定了。也可以成功clone和push，我也不知道为啥但是就是成功了。</p>
+</li>
+</ul>
+<p>绑定过程中我才理解到，原来利用Github和hexo建立博客网站的过程就是从本地Clone一个仓库，通过将仓库更新后上传到Github上来完成Github的内容更新，而hexo就是将Github仓库中的内容做成一个网站的形式，所以不需要服务器也能搭建博客网站。</p>
+<ul>
+<li><p>购买一个域名（虽然事后我才在逛酷安的时候了解到原来还有免费域名这个东西），按照教程在万网上花了8块钱购买了一个一年的域名；名字想了好久，不如就叫我家的wifi名字—WannaSurfing好了，为了好听我又改成了IWannaSurfing，结果最后购买的时候一不小心多输入了一个n变成了iwannnasurf，一直到后面进网站的时候我才发现这个错误，真是欲哭无泪。</p>
+</li>
+<li><p>解析域名，这一步我没有仔细看教程一开始弄不明白那两个解析记录怎么来的。后来仔细看了图片才正确搞对了第一个github的解析；但是第二个我ping出来的一直是ipv6的地址，后来在评论里才发现在后面加个 -4就是ipv4的地址了；CNAME文件也搞了好几次才成功。</p>
+</li>
+<li><p>安装node.js和hexo，nodejs安装倒是挺成功，但是我的npm一直安装失败，后面重新换了个版本npm倒是装成功了。但是一直报一个错误，我怀疑是环境变量的问题，没有设置好。后面也不知到和我开的代理有没有关系，反正就是很乱。然后就是编辑配置文件了。</p>
+</li>
+<li><p>最后是设置next主题，next主题挺好的，许多配置我还没有摸透，导致把网页整的乱七八糟的后来又重新恢复成了原样。慢慢来吧。</p>
+</li>
+</ul>
+<p>就算是以第一篇博客记录一下我搭建的第一个博客网站吧。现在用的是刚刚了解到的markdown语法来写作，感觉挺好用的。以后应该还会不断更新一些小东西，先写到这里吧。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -292,7 +373,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
